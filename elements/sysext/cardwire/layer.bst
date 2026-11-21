@@ -10,12 +10,11 @@ build-depends:
 
 variables:
   install-root: '/cardwire'
-  cardwire-version: '$(cat /cardwire%{prefix}/cardwire-version)'
 
 config:
   commands:
   - |
     mkdir -p /cardwire/usr/lib/extension-release.d
-    cat <<EOF > /cardwire/usr/lib/extension-release.d/extension-release.cardwire_%{cardwire-version}
+    cat <<EOF > /cardwire/usr/lib/extension-release.d/extension-release.cardwire
     ID=_any
     EOF

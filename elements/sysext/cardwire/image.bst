@@ -45,4 +45,4 @@ config:
         --no-pager \
         --seed %{repart-seed} \
         --copy-source=cardwire \
-        %{install-root}/cardwire_%{cardwire-version}.sysext.raw
+        %{install-root}/cardwire_%{cardwire-version}_%{systemd-arch}.sysext.raw

@@ -1,0 +1,10 @@
+aliases:
+  codeberg: https://codeberg.org/
+  crates: https://static.crates.io/
+  github: https://github.com/
+  gitlab: https://gitlab.com/
+  pypi: https://files.pythonhosted.org/packages/
+  # generic alias
+  https: https://
+
+  github_files: https://github.com/

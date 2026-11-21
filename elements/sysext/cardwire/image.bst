@@ -11,6 +11,7 @@ build-depends:
     location: /cardwire
 
 variables:
+  cardwire-version: '$(cat /cardwire%{prefix}/cardwire-version)'
   repart-seed: 127a8905-b3bb-4cfe-a828-776f3d8087c7
   filesystem-time: 1321009871
   strip-binaries: ''
@@ -44,4 +45,4 @@ config:
         --no-pager \
         --seed %{repart-seed} \
         --copy-source=cardwire \
-        %{install-root}/cardwire.sysext.raw
+        %{install-root}/cardwire_%{cardwire-version}.sysext.raw

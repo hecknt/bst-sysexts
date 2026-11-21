@@ -2434,6 +2434,7 @@ sources:
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-rust.bst
 - freedesktop-sdk.bst:components/bpf-maybe.bst
+- freedesktop-sdk.bst:components/git.bst
 - freedesktop-sdk.bst:components/pkg-config.bst
 - freedesktop-sdk.bst:components/rust-src.bst
 # runtime dependencies, not being declared as such to make building the sysext easier
@@ -2474,5 +2475,7 @@ config:
     for icon in assets/icons/*.svg; do
       install -Dm644 "$icon" "%{install-root}%{datadir}/icons/hicolor/scalable/apps/$(basename "$icon")"
     done
+  - |
+    git describe --tag --exact > %{install-root}%{prefix}/cardwire-version
   - |
     %{install-extra}

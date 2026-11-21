@@ -10,7 +10,8 @@ This is a test repository for sysexts built to work on [GNOME OS](https://os.gno
 
 ## Goals
 
-The goal is to allow for these sysexts to be updated automatically through systemd-sysupdate by installing a transfer definition into `/etc/sysupdate.d`
+The goal is to allow for these sysexts to be updated automatically through systemd-sysupdate by installing a transfer definition into `/etc/sysupdate.(component-name).d`
 
-- [ ] Cardwire
+- [ ] CI
+- [x] Cardwire
 - [ ] Tailscale
